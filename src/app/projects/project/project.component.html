@@ -1,0 +1,8 @@
+<div class="card">
+    <img *ngFor="let image of project?.images" [src]="image.src" [alt]="image.alt" />
+    <div class="card-body">
+      <h5 class="card-title">{{project?.title}}</h5>
+      <p class="card-text">{{project?.description}}</p>
+      <a [href]="project?.url" class="btn btn-primary" target="_blank">Github</a>
+    </div>
+  </div>
